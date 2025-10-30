@@ -21,9 +21,9 @@ architecture tb of alu_tb is
     signal Z : std_logic;
 begin
 
-    dut : entity alu generic map (
-        W   => W
-    ) port map (
+    dut : entity alu 
+    generic map (W => W) 
+    port map (
         A => A,
         B => B,
         sel_fn => sel_fn,

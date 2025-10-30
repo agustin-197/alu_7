@@ -31,9 +31,9 @@ begin
     begin
         -- Genera un ciclo de reloj
         clk <= '0';
-        wait for CLK_PERIODO / 2; -- Espera 5 ns
+        wait for CLK_PERIODO / 2; 
         clk <= '1';
-        wait for CLK_PERIODO / 2; -- Espera 5 ns
+        wait for CLK_PERIODO / 2; 
     end process clk_gen_proc;
 
     estimulo_proc : process
